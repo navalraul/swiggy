@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1187491213.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: proxima nova,arial,Helvetica;
+        }
+        
+        #navbar {
+            width: 98%;
+            height: 80px;
+            border: 1px solid rgb(247, 241, 241);
+            background-color: snow;
+            padding: 0px 0px 0px 30px ;
+            /* border-bottom: 8px rgb(37, 34, 34); */
+            /* box: shadow 2px; */
+            /* position: fixed; */
+        }
+        #navbar >div:nth-child(1) {
+            width: 98%;
+            height: 90px;
+            /* border: 2px solid yellow; */
+            display: flex;
+            /* padding: 10px 10px 0px 0px; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) {
+            width: 6%;
+            height: 80px;
+            /* border: 2px solid black; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) >img {
+            width: 90%;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) {
+            width: 19%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) >p {
+            font-weight: bold;
+            margin-top: 25px;
+            text-decoration: underline;
+            /* margin-left: 10px; */
+
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) >span {
+            font-size: 14px;
+            margin: 11px;
+            margin-top: 25px;
+            color: gray;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(3) {
+            width: 26%;
+            height: 80px;
+            /* border: 2px solid black; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(3) >i {
+            margin-top: 25px;
+            width: 50%;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) >i {
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >img {
+            width: 18%;
+            height: 20px;
+            margin-top: 23px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >span {
+            margin-top: 20px;
+            font-size: 10px;
+            color: #e77204;
+            font-weight: bold;
+            margin-left: -5px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+            /* margin-left: 5px; */
+            /* padding: 10px; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) >i {
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) {
+            width: 9%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) >img {
+            width: 18%;
+            height: 20px;
+            margin-top: 23px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(8) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(8) >i {
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(8) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #class {
+            width: 100%;
+            height: 500px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #class >div:nth-child(1){
+            width: 60%;
+            height: 500px;
+            border: 2px solid red;
+            display: flex;
+        }
+        #class >div:nth-child(1) >div:nth-child(1) {
+            width: 5%;
+            height: 500px;
+            border: 2px solid black;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 500px;
+            border: 2px solid gold;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) {
+            width: 95%;
+            height: 80px;
+            border: 2px solid gold;
+            margin: 20px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 25px;
+            /* border: 2px solid black;     */
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) >h3 {
+            color: rgb(29, 28, 28);
+            margin: 0px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) {
+            width: 60%;
+            height: 20px;
+            /* border: 2px solid black; */
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h4 {
+            color: gray;
+            margin: 0px;
+            font-size: 16px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            width: 90%;
+            height: 200px;
+            border: 2px solid gold;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) {
+            width: 48%;
+            height: 190px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) {
+            width: 8%;
+            height: 30px;
+            /* border:2px solid red; */
+            margin: 10px 0px 2px 8px;
+        }
+
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) {
+            width: 85%;
+            height: 190px;
+            /* border:2px solid red; */
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h5 {
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >p {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h4 {
+            font-size: 14px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >button {
+            width: 50%;
+            height: 40px;
+            background-color: #60b246;
+            color: snow;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) {
+            width: 48%;
+            height: 190px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) {
+            width: 8%;
+            height: 30px;
+            /* border:2px solid red; */
+            margin: 10px 0px 2px 8px;
+        }
+
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) {
+            width: 85%;
+            height: 190px;
+            /* border:2px solid red; */
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >h5 {
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >p {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >h4 {
+            font-size: 14px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >button {
+            width: 50%;
+            height: 40px;
+            background-color: #60b246;
+            color: snow;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(3) {
+            width: 90%;
+            height: 200px;
+            border: 2px solid gold;
+            margin: 15px;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(3) >div:nth-child(1) {
+            width: 49%;
+            height: 190px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-between;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(3) >div:nth-child(1) >div:nth-child(1) {
+            width: 20px;
+            border: 2px solid blue;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(3) >div:nth-child(1) >div:nth-child(2) {
+            width: 87%;
+            height: 190px;
+            border: 2px solid seagreen;
+        }
+        #class >div:nth-child(2){
+            width: 30%;
+            height: 500px;
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <div>
+                <img src="https://cdn.iconscout.com/icon/free/png-256/swiggy-1613371-1369418.png"/>
+            </div>
+            <div>
+                <p>Worli</p>
+                <span>Mumbai,Maharastra, India</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-angle-down" style="color: #e77204;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Search</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3161/3161442.png"/>
+                <p>Offers</p>
+                <span>NEW</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-life-ring" style="color: #060709;"></i>
+                <p>Help</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/327/327628.png"/>
+                <p>Sign In</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+    <div id="class">
+        <div>
+            <div>1</div>
+            <div>
+                <div>
+                    <div>
+                        <h3>Choose a delivery address</h3>
+                    </div>
+                    <div>
+                        <h4>Multiple addresses in this location</h4>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div>
+                            <h5>Home</h5>
+                            <p>E Wing, Room No 1305,13th Floor, Mahalakshmi C. H. S. Ltd, P. B. Marg, Worli, Century Colony, Gopal Nagar, Worli, Mum...</p>
+                            <h4>30 Mins</h4>
+                            <button>Deliver Here</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h5>Other</h5>
+                                <p>E Wing, Room No 1305,13th Floor, Mahalakshmi C. H. S. Ltd, P. B. Marg, Worli, Century Colony, Gopal Nagar, Worli, Mum...</p>
+                                <h4>25 Mins</h4>
+                                <button>Deliver Here</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div>
+                            <h5>Home</h5>
+                            <p>E Wing, Room No 1305,13th Floor, Mahalakshmi C. H. S. Ltd, P. B. Marg, Worli, Century Colony, Gopal Nagar, Worli, Mum...</p>
+                            <h4>30 Mins</h4>
+                            <button>Deliver Here</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div>4</div> -->
+            </div>
+        </div>
+        <div>2</div>
+    </div>
+    <div>1</div>
+</body>
+</html>

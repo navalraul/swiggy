@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #class {
+            width: 50%;
+            height: 500px;
+            border: 2px solid red;
+            margin: 20px 50px 10px 350px;
+        }
+        #class >div:nth-child(1) {
+            width: 97%;
+            height: 120px;
+            /* border: 2px solid black; */
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #class >div:nth-child(1) >div:nth-child(1) {
+            width: 40%;
+            height: 120px;
+            /* border: 2px solid gold; */
+            margin: 0px;
+        }
+        #class >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 60px;
+            /* border: 1px solid black; */
+        }
+        #class >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) >h3 {
+            margin: 0px;
+            font-size: 50px;
+        }
+        #class >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 80%;
+            height: 30px;
+            /* border: 1px solid black; */
+            display: flex;
+            margin: 10px;
+        }
+        #class >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >p {
+            margin: 5px;
+        }
+        #class >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >span {
+            margin: 5px;
+            color: #fc8019;
+        }
+        #class >div:nth-child(1) >div:nth-child(2) {
+            width: 30%;
+            height: 120px;
+            /* border: 2px solid gold; */
+        }
+        #class >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+        }
+        #class >div:nth-child(2) {
+            width: 97%;
+            height: 80px;
+            /* border: 2px solid black; */
+            margin: 10px;
+        }
+        #class >div:nth-child(2) >input {
+            width: 95%;
+            height: 50px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        #class >div:nth-child(3) {
+            width: 97%;
+            height: 80px;
+            /* border: 2px solid black; */
+            margin: 10px;
+        }
+        #class >div:nth-child(3) >button {
+            width: 97%;
+            height: 55px;
+            margin: 10px;
+            font-size: 20px;
+            color: snow;
+            background-color: #fc8019;
+        }
+        #class >div:nth-child(4) {
+            width: 97%;
+            height: 80px;
+            /* border: 2px solid black; */
+            margin: 10px;
+            display: flex;
+        }
+        #class >div:nth-child(4) >p {
+            margin: 0px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="class">
+        <div>
+            <div>
+                <div>
+                    <h3>Login</h3>
+                </div>
+                <div>
+                    <p>or</p>
+                    <span>create an account</span>
+                </div>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r"/>
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="Phone Number" />
+        </div>
+        <div>
+            <button>Login</button>
+        </div>
+        <div>
+            <p>By clicking on Login, I accept the</p>
+            <span>Terms & Conditions & Privacy Policy</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1187491213.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: proxima nova,arial,Helvetica;
+        }
+        
+        #navbar {
+            width: 98%;
+            height: 80px;
+            border: 1px solid rgb(247, 241, 241);
+            background-color: snow;
+            padding: 0px 0px 0px 30px ;
+            /* border-bottom: 8px rgb(37, 34, 34); */
+            /* box: shadow 2px; */
+            /* position: fixed; */
+        }
+        #navbar >div:nth-child(1) {
+            width: 98%;
+            height: 90px;
+            /* border: 2px solid yellow; */
+            display: flex;
+            /* padding: 10px 10px 0px 0px; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) {
+            width: 6%;
+            height: 80px;
+            /* border: 2px solid black; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) >img {
+            width: 90%;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) {
+            width: 19%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) >p {
+            font-weight: bold;
+            margin-top: 25px;
+            text-decoration: underline;
+            /* margin-left: 10px; */
+
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) >span {
+            font-size: 14px;
+            margin: 11px;
+            margin-top: 25px;
+            color: gray;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(3) {
+            width: 26%;
+            height: 80px;
+            /* border: 2px solid black; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(3) >i {
+            margin-top: 25px;
+            width: 50%;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) >i {
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >img {
+            width: 18%;
+            height: 20px;
+            margin-top: 23px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >span {
+            margin-top: 20px;
+            font-size: 10px;
+            color: #e77204;
+            font-weight: bold;
+            margin-left: -5px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+            /* margin-left: 5px; */
+            /* padding: 10px; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) >i {
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) {
+            width: 9%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) >img {
+            width: 18%;
+            height: 20px;
+            margin-top: 23px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(8) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(8) >i {
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(8) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #screen {
+            width: 70%;
+            height: 2700px;
+            /* border: 2px solid red; */
+            padding: 20px;
+            margin: 20px 0px 20px 190px;
+        }
+        #screen >div:nth-child(1){
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+        }   
+        #screen >div:nth-child(1) >div:nth-child(1) {
+            width: 50%;
+            height: 20px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #screen >div:nth-child(1) >div:nth-child(1) >h5 {
+            font-size: 10px;
+            margin: 0px;
+            color: gray;
+        }
+        #screen >div:nth-child(1) >div:nth-child(1) >span {
+            font-size: 11px;
+            /* word-spacing: 5px; */
+        }
+        #screen >div:nth-child(1) >div:nth-child(2) {
+            width: 3%;
+            height: 20px;
+            /* border: 2px solid black; */
+        }
+        #screen >div:nth-child(2){
+            width: 100%;
+            height: 115px;
+            /* border: 2px solid red; */
+            border-bottom: 1px solid rgb(173, 169, 169);
+            display: flex;
+            justify-content: space-between;
+        }  
+        #screen >div:nth-child(2) >div:nth-child(1){
+            width: 40%;
+            height: 110px;
+            /* border: 2px solid black;     */
+        }
+        #screen >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 25px;
+            /* border: 2px solid gold; */
+        }
+        #screen >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) >h4 {
+            margin: 0px;
+            font-size: 19px;
+        }
+        #screen >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) {
+            width: 50%;
+            height: 35px;
+            /* border: 2px solid gold; */
+        }
+        #screen >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >span {
+            font-size: 12px;
+            margin: 0px;
+            color: gray;
+        }
+        #screen >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >p {
+            font-size: 12px;
+            margin: 2px;
+            color: gray;
+        }
+        #screen >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) {
+            width: 80%;
+            height: 30px;
+            /* border: 2px solid gold; */
+            margin: 7px;
+        }
+        #screen >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) >span {
+            margin: 5px;
+            font-size: 13px;
+            color: gray;
+
+        }
+        #screen >div:nth-child(2) >div:nth-child(2){
+            width: 8%;
+            height: 60px;
+            border: 1px solid rgb(182, 176, 176);
+            margin: 8px;
+            border-radius: 5px;
+            padding: 7px;
+        }
+        #screen >div:nth-child(2) >div:nth-child(2) >h6 {
+            margin: 8px;
+            font-size: 15px;
+            color: #3d9b6d;
+        }
+        #screen >div:nth-child(2) >div:nth-child(2) >span {
+            font-size: 12px;
+            margin: 2px;
+            color: gray;
+        }
+        #screen >div:nth-child(3){
+            width: 100%;
+            height: 170px;
+            /* border: 2px solid red; */
+            border-bottom: 1px solid rgb(179, 174, 174);
+            margin-top: 5px;
+        } 
+        #screen >div:nth-child(3) >div:nth-child(1) {
+            width: 50%;
+            height: 25px;
+            /* border: 2px solid black; */
+            padding: 2px;
+            display: flex;
+        }
+        #screen >div:nth-child(3) >div:nth-child(1) >div:nth-child(1) {
+            width: 25%;
+            height: 20px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(3) >div:nth-child(1) >div:nth-child(1) >span {
+            font-size: 13px;
+            font-weight: bold;
+        }
+        #screen >div:nth-child(3) >div:nth-child(1) >div:nth-child(2) {
+            width: 25%;
+            height: 20px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(3) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 18%;
+            height: 16px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(1) >div:nth-child(2) >span {
+            font-size: 13px;
+            /* margin: 5px; */
+            /* padding: 0px 2px 5px 5px; */
+            margin-top: 30px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) {
+            width: 100%;
+            height: 80px;
+            /* border: 2px solid black; */
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(1) {
+            width: 24%;
+            height: 55px;
+            border: 1px solid rgb(196, 190, 190);
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 1px solid black; */
+            padding: 2px;
+            margin-top: 2px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) >img {
+            width: 12%;
+            height: 18px;
+            margin: 0px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) >span {
+            font-size: 13px;
+            margin-left: 5px;
+            font-weight: bold;
+            color: #686b78;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 1px solid black; */
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >span {
+            font-size: 10px;
+            color: gray;
+            font-weight: bold;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(2) {
+            width: 24%;
+            height: 55px;
+            border: 1px solid rgb(196, 190, 190);
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >img {
+            width: 13%;
+            height: 18px;
+            margin: 0px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >span {
+            font-size: 13px;
+            margin-left: 5px;
+            font-weight: bold;
+            color: #686b78;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 1px solid black; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >span {
+            font-size: 10px;
+            color: gray;
+            font-weight: bold;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(3) {
+            width: 24%;
+            height: 55px;
+            border: 1px solid rgb(196, 190, 190);
+            border-radius: 5px;
+            /* margin-top: 5px; */
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(3) >div:nth-child(1) >img {
+            width: 12%;
+            height: 18px;
+            margin: 0px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(3) >div:nth-child(1) >span {
+            font-size: 13px;
+            margin-left: 5px;
+            font-weight: bold;
+            color: #686b78;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(3) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 1px solid black; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(3) >div:nth-child(2) >span {
+            font-size: 10px;
+            color: gray;
+            font-weight: bold;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(4) {
+            width: 24%;
+            height: 55px;
+            border: 1px solid rgb(196, 190, 190);
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(4) >div:nth-child(1) >img {
+            width: 14%;
+            height: 20px;
+            margin: 0px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(4) >div:nth-child(1) >span {
+            font-size: 13px;
+            margin-left: 5px;
+            font-weight: bold;
+            color: #686b78;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(4) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 1px solid black; */
+            margin-top: 3px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(2) >div:nth-child(4) >div:nth-child(2) >span {
+            font-size: 10px;
+            color: gray;
+            font-weight: bold;
+            /* margin-top: 5px; */
+            padding: 3px;
+        }
+        #screen >div:nth-child(3) >div:nth-child(3) {
+            width: 50%;
+            height: 50px;
+            /* border: 2px solid black; */
+            margin-top: 15px;
+            display: flex;
+        }
+        #screen >div:nth-child(3) >div:nth-child(3) >div:nth-child(1) {
+            width: 18%;
+            height: 20px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(3) >div:nth-child(3) >div:nth-child(1) >h5 {
+            margin: 0px;
+            color: #48494d;
+        }
+        #screen >div:nth-child(3) >div:nth-child(3) >div:nth-child(2) {
+            width: 8%;
+            height: 18px;
+            /* border: 2px solid green; */
+            border-radius: 5px;
+            background-color: rgb(172, 161, 161);
+        }
+        #screen >div:nth-child(3) >div:nth-child(3) >div:nth-child(2) >i {
+            margin: 1px;
+        }
+        #screen >div:nth-child(4){
+            width: 100%;
+            height: 200px;
+            /* border: 2px solid red; */
+            border-bottom: 1px solid rgb(207, 203, 203);
+            margin-top: 15px;
+        } 
+        #screen >div:nth-child(4) >div:nth-child(1) {
+            width: 100%;
+            height: 30px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(4) >div:nth-child(1) >div:nth-child(1) {
+            width: 40%;
+            height: 30px;
+            /* border: 1px solid green; */
+        }
+        #screen >div:nth-child(4) >div:nth-child(1) >div:nth-child(1) >h5 {
+            margin: 0px;
+            font-size: 16px;
+        }
+        #screen >div:nth-child(4) >div:nth-child(1) >div:nth-child(2) {
+            width: 3%;
+            height: 30px;
+            /* border: 1px solid green; */
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) {
+            width: 100%;
+            height: 150px;
+            /* border: 2px solid black; */
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(1) {
+            width: 45%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* width: 60%; */
+            /* height: 20px; */
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(4) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(5) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(6) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(7) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(8) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(10) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 10px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(11) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        
+        #screen >div:nth-child(12){
+            width: 100%;
+            height: 200px;
+            /* border: 2px solid red; */
+            border-bottom: 1px solid rgb(207, 203, 203);
+            margin-top: 30px;
+        } 
+        #screen >div:nth-child(12) >div:nth-child(1) {
+            width: 100%;
+            height: 30px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(12) >div:nth-child(1) >div:nth-child(1) {
+            width: 40%;
+            height: 30px;
+            /* border: 1px solid green; */
+        }
+        #screen >div:nth-child(12) >div:nth-child(1) >div:nth-child(1) >h5 {
+            margin: 0px;
+            font-size: 16px;
+        }
+        #screen >div:nth-child(12) >div:nth-child(1) >div:nth-child(2) {
+            width: 3%;
+            height: 30px;
+            /* border: 1px solid green; */
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) {
+            width: 100%;
+            height: 150px;
+            /* border: 2px solid black; */
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(1) {
+            width: 45%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* width: 60%; */
+            /* height: 20px; */
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(12) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(13) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(14) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(15) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(16) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) {
+            width: 100%;
+            height: 160px;
+            /* border: 2px solid black; */
+            border-bottom: 1px solid rgb(199, 194, 194);
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) {
+            width: 60%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(2) >h5 {
+            margin: 0px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(3) >span {
+            font-size: 13px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 25px;
+            /* border: 2px solid salmon; */
+            margin-top: 5px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(1) >div:nth-child(4) >p {
+            font-size: 12px;
+            color: #78797c;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(2) {
+            width: 18%;
+            height: 110px;
+            /* border: 2px solid green; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(2) >img {
+            width: 100%;
+            height: 105px;
+            border-radius: 10px;
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
+            margin: -20px;
+            margin-left: 20px;
+            /* border: 2px solid saddlebrown; */
+        }
+        #screen >div:nth-child(9) >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >button {
+            width: 80%;
+            height: 30px;
+            color: green;
+            background-color: snow;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #footer {
+            width: 100%;
+            height: 450px;
+            /* border: 2px solid red; */
+            border-bottom: 0.5px solid snow;
+            background-color: black;
+            display: flex;
+            color: snow;
+            justify-content: center;
+        }
+        #footer >div:nth-child(1) {
+            width: 25%;
+            height: 440px;
+            /* border: 2px solid snow; */
+            
+        }
+        #footer >div:nth-child(1) >h4 {
+            font-size: 13px;
+            padding: 30px 50px 20px 0px;
+            color: rgb(75, 73, 73);
+        }
+        #footer >div:nth-child(1) >ul {
+            padding: 2px;
+        }
+        #footer >div:nth-child(2) {
+            width: 25%;
+            height: 440px;
+            /* border: 2px solid snow; */
+        }
+        #footer >div:nth-child(2) >h4 {
+            font-size: 13px;
+            padding: 30px 50px 20px 0px;
+            color: rgb(75, 73, 73);
+        }
+        #footer >div:nth-child(2) >ul {
+            padding: 2px;
+        }
+        #footer >div:nth-child(3) {
+            width: 25%;
+            height: 440px;
+            /* border: 2px solid snow; */
+        }
+        #footer >div:nth-child(3) >h4 {
+            font-size: 13px;
+            padding: 30px 50px 20px 0px;
+            color: rgb(75, 73, 73);
+        }
+        #footer >div:nth-child(3) >ul {
+            padding: 2px;
+        }
+
+        #footer >div:nth-child(4) {
+            width: 18%;
+            height: 440px;
+            /* border: 2px solid snow; */
+        }
+        #footer >div:nth-child(4) >img {
+            padding: 50px 10px 0px 10px;
+        }
+        #footer2 {
+            width: 100%;
+            height: 1500px;
+            /* border: 2px solid red; */
+            background-color: black;
+            color: snow;
+            display: flex;
+            justify-content: center;
+        }
+        #footer2 >div{
+            width: 23%;
+            height: 1460px;
+            /* border: 2px solid snow; */
+            /* background-color: black; */
+            margin-top: 20px;
+        }
+        #footer2 >div:nth-child(1) >h4 {
+            font-size: 13px;
+            color: rgb(75, 73, 73);
+        }
+        #footer2 >div:nth-child(1) >ul {
+            padding: 2px;
+        }
+        #footer2 >div:nth-child(2) >ul {
+            padding: 2px ;
+        }
+        #footer2 >div:nth-child(3) >ul {
+            padding: 2px ;
+        }
+        #footer2 >div:nth-child(4) >ul {
+            padding: 2px ;
+        }
+        #footer3 {
+            width: 95%;
+            height: 70px;
+            /* border: 2px solid red; */
+            background-color: black;
+            border-top: 1px solid snow;
+            padding: 10px 50px 10px 40px;
+        }
+        #footer3 >div:nth-child(1) {
+            width: 95%;
+            height: 60px;
+            /* border: 2px solid snow; */
+            padding: 10px 0px 0px 0px;
+            justify-content: space-between;
+            display: flex;
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(1) {
+            width: 20%;
+            height: 60px;
+            /* border: 2px solid red; */
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(1) >img {
+            width: 70%;
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(2) {
+            width: 60%;
+            height: 60px;
+            /* border: 2px solid red; */
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(2) {
+            color: snow;
+            text-align: center;
+            font-size: 20px;
+            padding: 15px 0px 0px 0px;
+
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(3) {
+            width: 20%;
+            height: 60px;
+            /* border: 2px solid red; */
+            justify-content: center;
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(3) >img {
+            width: 13%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <div>
+                <img src="https://cdn.iconscout.com/icon/free/png-256/swiggy-1613371-1369418.png"/>
+            </div>
+            <div>
+                <p>Worli</p>
+                <span>Mumbai,Maharastra, India</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-angle-down" style="color: #e77204;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Search</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3161/3161442.png"/>
+                <p>Offers</p>
+                <span>NEW</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-life-ring" style="color: #060709;"></i>
+                <p>Help</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/327/327628.png"/>
+                <p>Sign In</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+    <div id="screen">
+        <div>
+            <div>
+                <h5>Home / Mumbai / Worli / </h5>
+                <span>  Merwans Cake Shop</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h4>Merwans Cake Shop</h4>
+                </div>
+                <div>
+                    <span>Desserts,Bakery.</span>
+                    <p>Worli, 0.6km</p>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_18,h_18/v1648635511/Delivery_fee_new_cjxumu"/>
+                    <span>0.6 kms | ₹30 Delivery fee will apply</span>
+                </div>
+            </div>
+            <div>
+                <h6><i class="fa-solid fa-star" style="color: #3d9b6d;"></i> 4.5</h6>
+                <hr>
+                <span>500+ ratings</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <i class="fa-solid fa-life-ring" style="color: #060709;"></i>
+                    <span>16 MINS</span>
+                </div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Indian_Rupee_symbol_in_circle_PD_version.svg/1200px-Indian_Rupee_symbol_in_circle_PD_version.svg.png"/>
+                    <span>₹400 for two</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/rng/md/ads/production/1acdb97aadcb61b323307845bda86535"/>
+                        <span>20% OFF UPTO ₹120</span>
+                    </div>
+                    <div>
+                        <span>USE FEDERALCC || ABOVE ₹249</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/rng/md/ads/production/4abdba6754dfedb04324150e316a4004"/>
+                        <span>20% OFF UPTO ₹125</span>
+                    </div>
+                    <div>
+                        <span>USE KOTAK125 || ABOVE ₹500</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/rng/md/ads/production/6ef0fc65ca643ecbdcf8a930599c7edd"/>
+                        <span>15% OFF UPTO ₹100</span>
+                    </div>
+                    <div>
+                        <span>USE HSBCFEST || ABOVE ₹499</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/rng/md/ads/production/5c4848f8c208408b048c18f6be604f14"/>
+                        <span>10% OFF UPTO ₹100</span>
+                    </div>
+                    <div>
+                        <span>USE INDUS100 || ABOVE ₹600</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5>Veg Only</h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-square" style="color: #f5f7f9;"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h5>Recommended (35)</h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-angle-up" style="color: #0c1018;"></i>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Hazelnut Truffle Cake (500 Gms)</h5>
+                    </div>
+                    <div>
+                        <span>₹424.58</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Decadent truffle cake layered and topped with hazelnut filling.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/kdp6nbijzicihf4gmzm0"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Cake Collage [500 Gm]</h5>
+                    </div>
+                    <div>
+                        <span>₹424.58</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Choc mousse,custard mousse,raspberry cream,pineapple,cherry filling, mousse cream.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/oioodmth2at4q0qcjbr0"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Dutch Truffle Cake (500 Gms)</h5>
+                    </div>
+                    <div>
+                        <span>₹424.58</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | You can never go wrong with the classic dutch truffle cake to celebrate any occasion.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ct8xbxqqcn2nozergs6n"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Chocolate to Kill Cake (500 Gms)</h5>
+                    </div>
+                    <div>
+                        <span>₹424.58</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Choc mousse,custard mousse,raspberry cream,pineapple,cherry filling, mousse cream.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/jorf3l7z5ibmtmj6yzbl"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Premium Black Forest [500 Gm]</h5>
+                    </div>
+                    <div>
+                        <span>₹424.58</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Part of every celebration since the 90s, now in a premium version.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/o6csjlkvhhqqd4gpb7qt"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Decadent Chocolate Mousse Cake (500 Gms)</h5>
+                    </div>
+                    <div>
+                        <span>₹424.58</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Light yet creamy and thick, the perfect chocolate mousse exists!</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nacvvjm7ysidejnyvmjf"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Blackforest [500 Gm]</h5>
+                    </div>
+                    <div>
+                        <span>₹324.63</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Classic black forest with layers of fresh cream and chocolate flakes.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nduntqf2wqr2sthi063x"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Caramel Custard Cake (500 gms)</h5>
+                    </div>
+                    <div>
+                        <span>₹324.63</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Nothing can go wrong with two old classics combined into one heavenly creation. Loaded with the goodness of custard cream.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/krio6uimpbhwqosf4rxb"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h5>Puff/Rolls (9)</h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-angle-up" style="color: #0c1018;"></i>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Paneer Pattice</h5>
+                    </div>
+                    <div>
+                        <span>₹28.81</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Crunchy and flaky on the outside, loaded with soft cottage cheese (paneer) on the inside.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/c7iv75svui1blrtyuulz"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Chicken Pattice [1pc]</h5>
+                    </div>
+                    <div>
+                        <span>₹21.30</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | The good old pattice loaded with minced chicken and black pepper powder.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/skktzogkpraozgd8ywug"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Tandoori Chicken Pattice(1 pc)</h5>
+                    </div>
+                    <div>
+                        <span>₹21.06</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Scrumptious chicken in desi-style tandoori masala, packed in a pattice.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/v7xccl0lxuofs0jepie5"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Cheese Puff</h5>
+                    </div>
+                    <div>
+                        <span>₹30.50</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Cheesy goodness wrapped in a flaky pastry, baked to perfection.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/n8svln1g6myod1q6dldx"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-regular fa-circle-stop" style="color: #2d9a34;"></i>
+                    </div>
+                    <div>
+                        <h5>Veg White Sauce Pattice</h5>
+                    </div>
+                    <div>
+                        <span>₹25.20</span>
+                    </div>
+                    <div>
+                        <p>Serves 1 | Our pattice with an italian twist, filled with peppery white sauce packed with mixed veggies.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/skktzogkpraozgd8ywug"/>
+                    <div>
+                        <button> ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div id="footer">
+        <div>
+            <h4>COMPANY</h4>
+            <ul>About us</ul>
+            <ul>Team</ul>
+            <ul>Careers</ul>
+            <ul>Swiggy Blog</ul>
+            <ul>Bug Bounty</ul>
+            <ul>Swiggy One</ul>
+            <ul>Swiggy Corporate</ul>
+            <ul>Swiggy Instamart</ul>
+            <ul>Swiggy Genie</ul>
+        </div>
+        <diV>
+            <h4>CONTACT</h4>
+            <ul>Help & Support</ul>
+            <ul>Partner with us</ul>
+            <ul>Ride with us</ul>
+        </diV>
+        <div>
+            <h4>LEGAL</h4>
+            <ul>Terms & Conditions</ul>
+            <ul>Refund & Cancellation</ul>
+            <ul>Privacy Policy</ul>
+            <ul>Cookie Policy</ul>
+            <ul>Offer Terms</ul>
+            <ul>Phishing & Fraud</ul>
+            <ul>Corporate – Swiggy Money Codes Terms and Conditions</ul>
+            <ul>Corporate - Swiggy Discount Voucher Terms and Conditions</ul>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv"/>
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"/>
+        </div>
+    </div>
+    <div id="footer2">
+        <div>
+            <h4>WE DELIVER TO</h4>
+            <ul>Mumbai </ul>
+            <ul>Delhi </ul>
+            <ul>Bangalore </ul>
+            <ul>Hyderabad </ul>
+            <ul>Chennai </ul>
+            <ul>Kolkata </ul>
+            <ul>Surat</ul>
+            <ul>Pune</ul>
+            <ul>Jaipur</ul>
+            <ul>Lucknow</ul>
+            <ul>Kanpur</ul>
+            <ul>Nagpur</ul>
+            <ul>Indore</ul>
+            <ul>Thane</ul>
+            <ul>Bhopal</ul>
+            <ul>Visakhapatnam</ul>
+            <ul>Pimpri & Chinchwad</ul>
+            <ul>Patna</ul>
+            <ul>Vadodara</ul>
+            <ul>Ghaziabad</ul>
+            <ul>Ludhiana</ul>
+            <ul>Agra</ul>
+            <ul>Nashik</ul>
+            <ul>Faridabad</ul>
+            <ul>Meerut</ul>
+            <ul>Rajkot</ul>
+            <ul>Kalyan & Dombivali</ul>
+            <ul>Vasai Virar</ul>
+            <ul>Varanasi</ul>
+            <ul>Srinagar</ul>
+            <ul>Aurangabad</ul>
+            <ul>Dhanbad</ul>
+            <ul>Amritsar</ul>
+            <ul>Navi Mumbai</ul>
+            <ul>Allahabad</ul>
+            <ul>Ranchi</ul>
+            <ul>Haora</ul>
+        </div>
+        <div>
+            <ul>Dhanbad</ul>
+            <ul>Amritsar</ul>
+            <ul>Navi Mumbai</ul>
+            <ul>Allahabad</ul>
+            <ul>Ranchi</ul>
+            <ul>Haora</ul>
+            <ul>Coimbatore</ul>
+            <ul>Jabalpur</ul>
+            <ul>Gwalior</ul>
+            <ul>Vijayawada</ul>
+            <ul>Coimbatore</ul>
+            <ul>Jabalpur</ul>
+            <ul>Gwalior</ul>
+            <ul>Vijayawada</ul>
+            <ul>Jodhpur</ul>
+            <ul>Madurai</ul>
+            <ul>Raipur</ul>
+            <ul>Kota</ul>
+            <ul>Guwahati</ul>
+            <ul>Chandigarh</ul>
+            <ul>Solapur</ul>
+            <ul>Hubli and Dharwad</ul>
+            <ul>Hubli and Dharwad</ul>
+            <ul>Moradabad</ul>
+            <ul>Gurgaon</ul>
+            <ul>Aligarh</ul>
+            <ul>Jalandhar</ul>
+            <ul>Tiruchirappalli</ul>
+            <ul>Bhubaneswar</ul>
+            <ul>Salem</ul>
+            <ul>Mira and Bhayander</ul>
+            <ul>Thiruvananthapuram</ul>
+            <ul>Bhiwandi</ul>
+            <ul>Saharanpur</ul>
+            <ul>Gorakhpur</ul>
+            <ul>Guntur</ul>
+            <ul>Bikaner</ul>
+            <ul>Amravati</ul>
+        </div>
+        <div>
+            <ul>Coimbatore</ul>
+            <ul>Jabalpur</ul>
+            <ul>Gwalior</ul>
+            <ul>Vijayawada</ul>
+            <ul>Jodhpur</ul>
+            <ul>Madurai</ul>
+            <ul>Raipur</ul>
+            <ul>Kota</ul>
+            <ul>Guwahati</ul>
+            <ul>Chandigarh</ul>
+            <ul>Solapur</ul>
+            <ul>Hubli and Dharwad</ul>
+            <ul>Hubli and Dharwad</ul>
+            <ul>Moradabad</ul>
+            <ul>Gurgaon</ul>
+            <ul>Aligarh</ul>
+            <ul>Jalandhar</ul>
+            <ul>Tiruchirappalli</ul>
+            <ul>Bhubaneswar</ul>
+            <ul>Mumbai </ul>
+            <ul>Delhi </ul>
+            <ul>Bangalore </ul>
+            <ul>Hyderabad </ul>
+            <ul>Chennai </ul>
+            <ul>Kolkata </ul>
+            <ul>Surat</ul>
+            <ul>Pune</ul>
+            <ul>Jaipur</ul>
+            <ul>Mumbai </ul>
+            <ul>Delhi </ul>
+            <ul>Bangalore </ul>
+            <ul>Hyderabad </ul>
+            <ul>Chennai </ul>
+            <ul>Kolkata </ul>
+            <ul>Surat</ul>
+            <ul>Pune</ul>
+            <ul>Jaipur</ul>
+            <ul>Noida</ul>
+        </div>
+        <div>
+            <ul>Jamshedpur</ul>
+            <ul>Bhilai Nagar</ul>
+            <ul>Warangal</ul>
+            <ul>Cuttack</ul>
+            <ul>Aligarh</ul>
+            <ul>Jalandhar</ul>
+            <ul>Tiruchirappalli</ul>
+            <ul>Bhubaneswar</ul>
+            <ul>Mumbai </ul>
+            <ul>Delhi </ul>
+            <ul>Bangalore </ul>
+            <ul>Hyderabad </ul>
+            <ul>Chennai </ul>
+            <ul>Kolkata </ul>
+            <ul>Surat</ul>
+            <ul>Pune</ul>
+            <ul>Firozabad</ul>
+            <ul>Kochi</ul>
+            <ul>Bhavnagar</ul>
+            <ul>Dehradun</ul>
+            <ul>Durgapur</ul>
+            <ul>Asansol</ul>
+            <ul>Nanded Waghala</ul>
+            <ul>Kolapur</ul>
+            <ul>Ajmer</ul>
+            <ul>Gulbarga</ul>
+            <ul>Jamnagar</ul>
+            <ul>Ujjain</ul>
+            <ul>Loni</ul>
+            <ul>Siliguri</ul>
+            <ul>Jhansi</ul>
+            <ul>Ulhasnagar</ul>
+            <ul>Nellore</ul>
+            <ul>Jammu</ul>
+            <ul>Sangli Miraj Kupwad</ul>
+            <ul>Belgaum</ul>
+            <ul>Mangalore</ul>
+            <ul>Ambattur</ul>
+        </div>
+    </div>
+    <div id="footer3">
+        <div>
+            <div>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"/>
+            </div>
+            <div>© 2023 Swiggy</div>
+            <div>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc"/>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-pinterest_kmz2wd"/>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh"/>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
