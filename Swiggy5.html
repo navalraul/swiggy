@@ -19,7 +19,8 @@
             padding: 0px 0px 0px 30px ;
             /* border-bottom: 8px rgb(37, 34, 34); */
             /* box: shadow 2px; */
-            /* position: fixed; */
+            position: sticky;
+            top: 0px;
         }
         #navbar >div:nth-child(1) {
             width: 98%;
@@ -143,169 +144,375 @@
             margin: 10px;
             margin-top: 25px;
         }
-        #class {
+        #info {
             width: 100%;
-            height: 500px;
+            height: 1000px;
             border: 2px solid red;
+            background-color: #e9ecee;
+            /* margin: 30px 0px; */
             display: flex;
             justify-content: space-evenly;
         }
-        #class >div:nth-child(1){
-            width: 60%;
-            height: 500px;
-            border: 2px solid red;
+        #info >div:nth-child(1){
+            width: 55%;
+            height: 930px;
+            /* border: 1px solid red; */
+            margin: 30px 0px;
             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        #class >div:nth-child(1) >div:nth-child(1) {
-            width: 5%;
-            height: 500px;
-            border: 2px solid black;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) {
+        #info >div:nth-child(1) >div:nth-child(1) {
             width: 100%;
-            height: 500px;
-            border: 2px solid gold;
+            height: 200px;
+            /* border: 1px solid gold; */
+            border: 0.5px solid rgb(205, 199, 199);
+            background-color: #ffffff;
         }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) {
-            width: 95%;
+        #info >div:nth-child(1) >div:nth-child(1):hover {
+            cursor: pointer;
+            box-shadow: 0px 5px 5px 6px rgb(218, 211, 211);
+        }
+        #info >div:nth-child(1) >div:nth-child(2) {
+            width: 100%;
+            height: 700px;
+            /* border: 1px solid gold; */
+        }
+        #info >div:nth-child(2){
+            width: 35%;
+            height: 620px;
+            border: 1px solid red;
+            margin: 30px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #info >div:nth-child(2) >div:nth-child(1) {
+            width: 100%;
+            height: 400px;
+            border: 1px solid gold;
+        }
+        #info >div:nth-child(2) >div:nth-child(2) {
+            width: 100%;
+            height: 200px;
+            /* border: 1px solid gold; */
+            background-color: #ffffff;
+        }
+        .firstinfo >div:nth-child(1){
+            width: 90%;
+            height: 50px;
+            margin: auto;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .firstinfo >div:nth-child(1) >div:nth-child(1) >h3 {
+            font-weight: lighter;
+        }
+        .firstinfo >div:nth-child(1) >div:nth-child(2) >h4 {
+            font-size: 13px;
+            color: #e77204;
+        }
+        .firstinfo >div:nth-child(2){
+            width: 90%;
+            height: 140px;
+            margin: auto;
+            /* border: 1px solid black; */
+        }
+        .delivery >h3 {
+            font-weight: lighter;
+            margin: 20px 0px 10px 0px;
+        }
+        .delivery >p {
+            width: 70%;
+            font-size: 13px;
+            color: #c5b0c2;
+            margin: 10px 0px;
+        }
+        .delivery >h4 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .secinfo {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+        .secinfo >div:nth-child(1) {
+            width: 40%;
             height: 80px;
-            border: 2px solid gold;
-            margin: 20px;
+            /* border: 1px solid black; */
+            margin: 10px 30px;
         }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) {
-            width: 60%;
-            height: 25px;
-            /* border: 2px solid black;     */
+        .secinfo >div:nth-child(1) >h3 {
+            font-family: sans-serif;
+            font-size: 18px;
+            color: #272a30;
         }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) >h3 {
-            color: rgb(29, 28, 28);
-            margin: 0px;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) {
-            width: 60%;
-            height: 20px;
-            /* border: 2px solid black; */
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h4 {
-            color: gray;
-            margin: 0px;
-            font-size: 16px;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) {
-            width: 90%;
-            height: 200px;
-            border: 2px solid gold;
-            margin: 20px;
+        .payinfo {
+            width: 100%;
+            height: 600px;
+            /* border: 1px solid palevioletred;  */
+            /* background-color: #ffffff; */
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) {
-            width: 48%;
-            height: 190px;
-            border: 2px solid black;
-            display: flex;
-            justify-content: space-between;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) {
-            width: 8%;
-            height: 30px;
-            /* border:2px solid red; */
-            margin: 10px 0px 2px 8px;
-        }
-
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) {
-            width: 85%;
-            height: 190px;
-            /* border:2px solid red; */
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h5 {
-            font-size: 15px;
-            margin-top: 10px;
-            margin-bottom: 0px;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >p {
-            font-size: 12px;
-            margin-top: 10px;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h4 {
-            font-size: 14px;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >button {
-            width: 50%;
-            height: 40px;
-            background-color: #60b246;
-            color: snow;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) {
-            width: 48%;
-            height: 190px;
-            border: 2px solid black;
-            display: flex;
-            justify-content: space-between;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) {
-            width: 8%;
-            height: 30px;
-            /* border:2px solid red; */
-            margin: 10px 0px 2px 8px;
-        }
-
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) {
-            width: 85%;
-            height: 190px;
-            /* border:2px solid red; */
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >h5 {
-            font-size: 15px;
-            margin-top: 10px;
-            margin-bottom: 0px;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >p {
-            font-size: 12px;
-            margin-top: 10px;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >h4 {
-            font-size: 14px;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >button {
-            width: 50%;
-            height: 40px;
-            background-color: #60b246;
-            color: snow;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(3) {
-            width: 90%;
-            height: 200px;
-            border: 2px solid gold;
-            margin: 15px;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(3) >div:nth-child(1) {
-            width: 49%;
-            height: 190px;
-            border: 2px solid red;
-            display: flex;
-            justify-content: space-between;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(3) >div:nth-child(1) >div:nth-child(1) {
-            width: 20px;
-            border: 2px solid blue;
-        }
-        #class >div:nth-child(1) >div:nth-child(2) >div:nth-child(3) >div:nth-child(1) >div:nth-child(2) {
-            width: 87%;
-            height: 190px;
-            border: 2px solid seagreen;
-        }
-        #class >div:nth-child(2){
+        .payinfo >div:nth-child(1) {
             width: 30%;
-            height: 500px;
-            border: 2px solid red;
+            height: 550px;
+            /* border: 1px solid green; */
+            background-color: #edf1f7;
         }
-
+        .payinfo >div:nth-child(1) >div:nth-child(1){
+            width: 85%;
+            height: 60px;
+            border: 1px solid green;
+            display: flex;
+            margin: 20px 31px;
+            background-color: #ffffff;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(1):hover {
+            cursor: pointer;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(1) >i {
+            margin: 30px 15px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(1) >h3 {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 24px 0px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(2){
+            width: 85%;
+            height: 50px;
+            border: 1px solid green;
+            display: flex;
+            margin: 20px 31px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(2):hover {
+            cursor: pointer;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(2) >i {
+            margin: 25px 15px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(2) >h3 {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 18px 0px;
+            color: gray;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(3){
+            width: 85%;
+            height: 50px;
+            border: 1px solid green;
+            display: flex;
+            margin: 20px 31px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(3):hover {
+            cursor: pointer;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(3) >i {
+            margin: 25px 15px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(3) >h3 {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 18px 0px;
+            color: gray;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(4){
+            width: 85%;
+            height: 50px;
+            border: 1px solid green;
+            display: flex;
+            margin: 20px 31px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(4):hover {
+            cursor: pointer;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(4) >i {
+            margin: 25px 15px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(4) >h3 {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 18px 0px;
+            color: gray;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(5){
+            width: 85%;
+            height: 50px;
+            border: 1px solid green;
+            display: flex;
+            margin: 20px 31px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(5):hover {
+            cursor: pointer;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(5) >i {
+            margin: 25px 15px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(5) >h3 {
+            font-weight: bold;
+            font-size: 14px;
+            margin: 18px 0px;
+            color: gray;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(6){
+            width: 85%;
+            height: 50px;
+            border: 1px solid green;
+            display: flex;
+            margin: 20px 31px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(6):hover {
+            cursor: pointer;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(6) >i {
+            margin: 25px 15px;
+        }
+        .payinfo >div:nth-child(1) >div:nth-child(6) >h3 {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 18px 0px;
+            color: gray;
+        }
+        .payinfo >div:nth-child(2) {
+            width: 58%;
+            height: 550px;
+            /* margin: auto; */
+            /* border: 1px solid green; */
+            /* margin: 20px 0px; */
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(1){
+            width: 100%;
+            height: 120px;
+            border: 1px solid rgb(175, 171, 171);
+            margin: 0px 0px 18px 0px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(1) >img {
+            width: 10%;
+            margin: 20px 20px 0px 30px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(1) >h5 {
+            font-size: 13px;
+            font-family: sans-serif;
+            margin: 20px 20px 0px 30px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(1) >p {
+            font-size: 12px;
+            font-family: sans-serif;
+            margin: 10px 20px 0px 30px;
+            color: #e77204;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(1) >p:hover {
+            cursor: pointer;
+            color: blueviolet;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(2){
+            width: 100%;
+            height: 120px;
+            border: 1px solid rgb(175, 171, 171);
+            margin: 0px 0px 18px 0px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(2) >img {
+            width: 10%;
+            margin: 10px 20px 0px 30px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(2) >h5 {
+            font-size: 13px;
+            font-family: sans-serif;
+            margin: 20px 20px 0px 30px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(2) >p {
+            font-size: 12px;
+            font-family: sans-serif;
+            margin: 10px 20px 0px 30px;
+            color: #e77204;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(2) >p:hover {
+            cursor: pointer;
+            color: blueviolet;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(3){
+            width: 100%;
+            height: 120px;
+            border: 1px solid rgb(175, 171, 171);
+            margin: 0px 0px 18px 0px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(3) >img {
+            width: 10%;
+            margin: 10px 20px 0px 30px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(3) >h5 {
+            font-size: 13px;
+            font-family: sans-serif;
+            margin: 20px 20px 0px 30px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(3) >p {
+            font-size: 12px;
+            font-family: sans-serif;
+            margin: 10px 20px 0px 30px;
+            color: #e77204;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(3) >p:hover {
+            cursor: pointer;
+            color: blueviolet;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(4){
+            width: 100%;
+            height: 120px;
+            border: 1px solid rgb(175, 171, 171);
+            margin: 0px 0px 18px 0px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(4) >img {
+            width: 10%;
+            margin: 10px 20px 0px 30px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(4) >h5 {
+            font-size: 13px;
+            font-family: sans-serif;
+            margin: 20px 20px 0px 30px;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(4) >p {
+            font-size: 12px;
+            font-family: sans-serif;
+            margin: 10px 20px 0px 30px;
+            color: #e77204;
+        }
+        .payinfo >div:nth-child(2) >div:nth-child(4) >p:hover {
+            cursor: pointer;
+            color: blueviolet;
+        }
+        .rightdown >div{
+            width: 80%;
+            height: 180px;
+            background-color: #ffffff;
+            border: 1px solid rgb(206, 199, 199);
+            margin: 10px 40px;
+        }
+        .rightdown >div >h5 {
+            font-size: 14px;
+            margin: 20px 20px;
+            font-family: sans-serif;
+        }
+        .rightdown >div >p {
+            font-size: 12px;
+            margin: 15px 20px;
+            color: #5e5f61;
+        }
+        .rightdown >div >p >span {
+            color: red;
+        }
+        .rightdown >div >h6 {
+            font-size: 12px;
+            margin: 10px 20px;
+            text-decoration: underline;
+            color: red;
+        }
+        .rightdown >div >h6:hover {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -344,64 +551,95 @@
             </div>
         </div>
     </div>
-    <div id="class">
+    <div id="info">
         <div>
-            <div>1</div>
-            <div>
+            <div class="firstinfo">
                 <div>
                     <div>
-                        <h3>Choose a delivery address</h3>
+                        <h3>Delivery address</h3>
                     </div>
                     <div>
-                        <h4>Multiple addresses in this location</h4>
+                        <h4>CHANGE</h4>
                     </div>
                 </div>
+                <div class="delivery">
+                    <h3>Home</h3>
+                    <p>E Wing, Room No 1305,13th Floor, Mahalakshmi C. H. S. Ltd, P. B. Marg, Worli, Century Colony, Gopal Nagar, Worli, Mumbai, Maharashtra 400025, India</p>
+                    <h4>32 MINS</h4>
+                </div>
+            </div>
+            <div class="secinfo">
                 <div>
+                    <h3>Choose payment method</h3>
+                </div>
+                <div class="payinfo">
                     <div>
                         <div>
-                            <i class="fa-solid fa-house"></i>
+                            <i class="fa-solid fa-wallet fa-xl"></i>
+                            <h3>Wallets</h3>
                         </div>
                         <div>
-                            <h5>Home</h5>
-                            <p>E Wing, Room No 1305,13th Floor, Mahalakshmi C. H. S. Ltd, P. B. Marg, Worli, Century Colony, Gopal Nagar, Worli, Mum...</p>
-                            <h4>30 Mins</h4>
-                            <button>Deliver Here</button>
+                            <i class="fa-brands fa-amazon-pay fa-xl"></i>
+                            <h3>UPI</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-credit-card fa-xl"></i>
+                            <h3>Sodexo</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-building-columns fa-xl"></i>
+                            <h3>Netbanking</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-credit-card fa-xl"></i>
+                            <h3>Credit & Debit Card</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-book fa-xl" style="color: #1b1f27;"></i>
+                            <h3>Pay on Delivery</h3>
                         </div>
                     </div>
                     <div>
                         <div>
-                            <div>
-                                <i class="fa-solid fa-house"></i>
-                            </div>
+                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/Amazon_Pay_Logos/Pay/logo_pay-primary-fullcolor-positive"/>
+                            <h5>Amazon Pay</h5>
+                            <p>LINK ACCOUNT</p>
                         </div>
                         <div>
-                            <div>
-                                <h5>Other</h5>
-                                <p>E Wing, Room No 1305,13th Floor, Mahalakshmi C. H. S. Ltd, P. B. Marg, Worli, Century Colony, Gopal Nagar, Worli, Mum...</p>
-                                <h4>25 Mins</h4>
-                                <button>Deliver Here</button>
-                            </div>
+                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/PaymentLogos/paymentIcons/wallets/paytm"/>
+                            <h5>Paytm</h5>
+                            <p>LINK ACCOUNT</p>
+                        </div>
+                        <div>
+                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/phonepe_icon_aca9jf"/>
+                            <h5>PhonePe</h5>
+                            <p>LINK ACCOUNT</p>
+                        </div>
+                        <div>
+                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/v1612413183/PaymentLogos/Mobikwik"/>
+                            <h5>Mobikwik</h5>
+                            <p>LINK ACCOUNT</p>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <i class="fa-solid fa-house"></i>
-                        </div>
-                        <div>
-                            <h5>Home</h5>
-                            <p>E Wing, Room No 1305,13th Floor, Mahalakshmi C. H. S. Ltd, P. B. Marg, Worli, Century Colony, Gopal Nagar, Worli, Mum...</p>
-                            <h4>30 Mins</h4>
-                            <button>Deliver Here</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div>4</div> -->
             </div>
         </div>
-        <div>2</div>
+        <div>
+            <div class="rightup">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="rightdown">
+                <div>
+                    <h5>Review your order and address details to avoid cancellations</h5>
+                    <p><span> Note: </span> you cancel within 60 seconds of placing your order, a 100% refund will be issued. No refund for cancellations made after 60 seconds.</p>
+                    <p>Avoid cancellation as it leads to food wastage.</p>
+                    <h6>Read cancellation policy</h6>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>1</div>
 </body>
 </html>
