@@ -61,11 +61,11 @@
         }
         #class >div:nth-child(2) {
             width: 97%;
-            height: 250px;
+            height: 300px;
             /* border: 2px solid black; */
             margin: 10px;
         }
-        #class >div:nth-child(2) >input {
+        #class >div:nth-child(2) >form >input {
             width: 95%;
             height: 40px;
             margin: 10px;
@@ -119,18 +119,22 @@
             </div>
         </div>
         <div>
-            <input type="text" placeholder="Enter your Name" />
-            <input type="text" placeholder="Enter your Email" />
-            <input type="password" placeholder="Enter Password" />
-            <input type="password" placeholder="Confirm Password" />
-        </div>
-        <div>
-            <button>Register</button>
+            <form onsubmit="register(event)">
+            <input id = "username" type="text" placeholder="Enter your Name" />
+            <input id="useremail" type="email" placeholder="Enter your Email" />
+            <input id="userpassword" type="password" placeholder="Enter Password" />
+            <input id="userconfirmpassword" type="password" placeholder="Confirm Password" />
+            <input type="submit" placeholder="Register"/>
+            </form>
         </div>
         <div>
             <p>By clicking on Login, I accept the</p>
             <span>Terms & Conditions & Privacy Policy</span>
         </div>
     </div>
+
+
+
+    <script src="./server.js"></script>
 </body>
 </html>
