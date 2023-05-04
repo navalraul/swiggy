@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: proxima nova,arial,Helvetica;
+        }
+        
+        #navbar {
+            width: 98%;
+            height: 80px;
+            border: 1px solid rgb(247, 241, 241);
+            padding: 10px 0px 0px 30px ;
+            /* border-bottom: 8px rgb(37, 34, 34); */
+            /* box: shadow 2px; */
+            background-color: snow;
+            position: sticky;
+            top: 0px;
+        }
+        #navbar >div:nth-child(1) {
+            width: 98%;
+            height: 90px;
+            /* border: 2px solid yellow; */
+            display: flex;
+            /* padding: 10px 10px 0px 0px; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) {
+            width: 6%;
+            height: 80px;
+            /* border: 2px solid black; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) >img {
+            width: 90%;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) {
+            width: 19%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) >p {
+            font-weight: bold;
+            margin-top: 25px;
+            text-decoration: underline;
+            /* margin-left: 10px; */
+
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) >span {
+            font-size: 14px;
+            margin: 11px;
+            margin-top: 25px;
+            color: gray;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(3) {
+            width: 26%;
+            height: 80px;
+            /* border: 2px solid black; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(3) >i {
+            margin-top: 25px;
+            width: 50%;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) >i {
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >img {
+            width: 18%;
+            height: 20px;
+            margin-top: 23px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >span {
+            margin-top: 20px;
+            font-size: 10px;
+            color: #e77204;
+            font-weight: bold;
+            margin-left: -5px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+            /* margin-left: 5px; */
+            /* padding: 10px; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) >i {
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) {
+            width: 9%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) >img {
+            width: 18%;
+            height: 20px;
+            margin-top: 23px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(8) {
+            width: 10%;
+            height: 80px;
+            /* border: 2px solid black; */
+            display: flex;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(8) >i {
+            margin-top: 25px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(8) >p {
+            margin: 10px;
+            margin-top: 25px;
+        }
+        #navbar2 {
+            width: 95%;
+            height: 60px;
+            /* border: 2px solid green; */
+            /* position: fixed; */
+            margin: 20px 30px;
+            display: flex;
+            border-bottom: 1px solid rgb(190, 186, 186);
+        }
+        #navbar2 >div:nth-child(1) {
+            width: 40%;
+            height: 50px;
+            /* border: 2px solid red; */
+        }
+        #navbar2 >div:nth-child(1) >h3 {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+        #navbar2 >div:nth-child(2) {
+            width: 8%;
+            height: 50px;
+            /* border: 2px solid red; */
+        }
+        #navbar2 >div:nth-child(2) >h5 {
+            color: rgb(63, 61, 61);
+            text-decoration: underline;
+        }
+        #navbar2 >div:nth-child(3) {
+            width: 9%;
+            height: 50px;
+            /* border: 2px solid red; */
+        }
+        #navbar2 >div:nth-child(3) >h5 {
+            color: grey;
+        }
+        #navbar2 >div:nth-child(4) {
+            width: 8%;
+            height: 50px;
+            /* border: 2px solid red; */
+        }
+        #navbar2 >div:nth-child(4) >h5 {
+            color: grey;
+            margin-left: 10px;
+        }
+        #navbar2 >div:nth-child(5) {
+            width: 12%;
+            height: 50px;
+            /* border: 2px solid red; */
+        }
+        #navbar2 >div:nth-child(5) >h5 {
+            color: grey;
+        }
+        #navbar2 >div:nth-child(6) {
+            width: 12%;
+            height: 50px;
+            /* border: 2px solid red; */
+        }
+        #navbar2 >div:nth-child(6) >h5 {
+            color: grey;
+        }
+        #navbar2 >div:nth-child(7) {
+            width: 8%;
+            height: 50px;
+            /* border: 2px solid red; */
+            display: flex;
+        }
+        #navbar2 >div:nth-child(7) >h5 {
+            color: rgb(70, 66, 66);
+        }
+        #navbar2 >div:nth-child(7) >img {
+            width: 24%;
+            height: 25px;
+            margin-top: 14px;
+            margin-left: 8px;
+        }
+        #products3 {
+            width: 100%;
+            height: 500px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* border: 1px solid black; */
+        }
+        #singlepro {
+            width: 20%;
+            border: 1px solid black;
+        }
+        #singlepro >img {
+            width: 100%;
+        }
+        #footer {
+            width: 100%;
+            height: 450px;
+            /* border: 2px solid red; */
+            border-bottom: 0.5px solid snow;
+            background-color: black;
+            display: flex;
+            color: snow;
+            justify-content: center;
+        }
+        #footer >div:nth-child(1) {
+            width: 25%;
+            height: 440px;
+            /* border: 2px solid snow; */
+            
+        }
+        #footer >div:nth-child(1) >h4 {
+            font-size: 13px;
+            padding: 30px 50px 20px 0px;
+            color: rgb(75, 73, 73);
+        }
+        #footer >div:nth-child(1) >ul {
+            padding: 2px;
+        }
+        #footer >div:nth-child(2) {
+            width: 25%;
+            height: 440px;
+            /* border: 2px solid snow; */
+        }
+        #footer >div:nth-child(2) >h4 {
+            font-size: 13px;
+            padding: 30px 50px 20px 0px;
+            color: rgb(75, 73, 73);
+        }
+        #footer >div:nth-child(2) >ul {
+            padding: 2px;
+        }
+        #footer >div:nth-child(3) {
+            width: 25%;
+            height: 440px;
+            /* border: 2px solid snow; */
+        }
+        #footer >div:nth-child(3) >h4 {
+            font-size: 13px;
+            padding: 30px 50px 20px 0px;
+            color: rgb(75, 73, 73);
+        }
+        #footer >div:nth-child(3) >ul {
+            padding: 2px;
+        }
+
+        #footer >div:nth-child(4) {
+            width: 18%;
+            height: 440px;
+            /* border: 2px solid snow; */
+        }
+        #footer >div:nth-child(4) >img {
+            padding: 50px 10px 0px 10px;
+        }
+        #footer2 {
+            width: 100%;
+            height: 1500px;
+            /* border: 2px solid red; */
+            background-color: black;
+            color: snow;
+            display: flex;
+            justify-content: center;
+        }
+        #footer2 >div{
+            width: 23%;
+            height: 1460px;
+            /* border: 2px solid snow; */
+            /* background-color: black; */
+            margin-top: 20px;
+        }
+        #footer2 >div:nth-child(1) >h4 {
+            font-size: 13px;
+            color: rgb(75, 73, 73);
+        }
+        #footer2 >div:nth-child(1) >ul {
+            padding: 2px;
+        }
+        #footer2 >div:nth-child(2) >ul {
+            padding: 2px ;
+        }
+        #footer2 >div:nth-child(3) >ul {
+            padding: 2px ;
+        }
+        #footer2 >div:nth-child(4) >ul {
+            padding: 2px ;
+        }
+        #footer3 {
+            width: 95%;
+            height: 70px;
+            /* border: 2px solid red; */
+            background-color: black;
+            border-top: 1px solid snow;
+            padding: 10px 50px 10px 40px;
+        }
+        #footer3 >div:nth-child(1) {
+            width: 95%;
+            height: 60px;
+            /* border: 2px solid snow; */
+            padding: 10px 0px 0px 0px;
+            justify-content: space-between;
+            display: flex;
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(1) {
+            width: 20%;
+            height: 60px;
+            /* border: 2px solid red; */
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(1) >img {
+            width: 70%;
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(2) {
+            width: 60%;
+            height: 60px;
+            /* border: 2px solid red; */
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(2) {
+            color: snow;
+            text-align: center;
+            font-size: 20px;
+            padding: 15px 0px 0px 0px;
+
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(3) {
+            width: 20%;
+            height: 60px;
+            /* border: 2px solid red; */
+            justify-content: center;
+        }
+        #footer3 >div:nth-child(1) >div:nth-child(3) >img {
+            width: 13%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <div>
+                <img src="https://cdn.iconscout.com/icon/free/png-256/swiggy-1613371-1369418.png"/>
+            </div>
+            <div>
+                <p>Worli</p>
+                <span>Mumbai,Maharastra, India</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-angle-down" style="color: #e77204;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Search</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/3161/3161442.png"/>
+                <p>Offers</p>
+                <span>NEW</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-life-ring" style="color: #060709;"></i>
+                <p>Help</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/327/327628.png"/>
+                <p>Sign In</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+    <div id="navbar2">
+        <div>
+            <h3>683 restaurants</h3>
+        </div>
+        <div>
+            <h5>Relevance</h5>
+        </div>
+        <div>
+            <h5>Delivery Time</h5>
+        </div>
+        <div>
+            <h5>Rating</h5>
+        </div>
+        <div>
+            <h5>Cost: Low To High</h5>
+        </div>
+        <div>
+            <h5>Cost: High To Low</h5>
+        </div>
+        <div>
+            <h5>Filters</h5>
+            <img src="data:image/png;base64,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"/>
+        </div>
+
+    </div>
+    <div id="products3">dfcs</div>
+    <div id="footer">
+        <div>
+            <h4>COMPANY</h4>
+            <ul>About us</ul>
+            <ul>Team</ul>
+            <ul>Careers</ul>
+            <ul>Swiggy Blog</ul>
+            <ul>Bug Bounty</ul>
+            <ul>Swiggy One</ul>
+            <ul>Swiggy Corporate</ul>
+            <ul>Swiggy Instamart</ul>
+            <ul>Swiggy Genie</ul>
+        </div>
+        <diV>
+            <h4>CONTACT</h4>
+            <ul>Help & Support</ul>
+            <ul>Partner with us</ul>
+            <ul>Ride with us</ul>
+        </diV>
+        <div>
+            <h4>LEGAL</h4>
+            <ul>Terms & Conditions</ul>
+            <ul>Refund & Cancellation</ul>
+            <ul>Privacy Policy</ul>
+            <ul>Cookie Policy</ul>
+            <ul>Offer Terms</ul>
+            <ul>Phishing & Fraud</ul>
+            <ul>Corporate – Swiggy Money Codes Terms and Conditions</ul>
+            <ul>Corporate - Swiggy Discount Voucher Terms and Conditions</ul>
+        </div>
+        <div>
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv"/>
+            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"/>
+        </div>
+    </div>
+    <div id="footer2">
+        <div>
+            <h4>WE DELIVER TO</h4>
+            <ul>Mumbai </ul>
+            <ul>Delhi </ul>
+            <ul>Bangalore </ul>
+            <ul>Hyderabad </ul>
+            <ul>Chennai </ul>
+            <ul>Kolkata </ul>
+            <ul>Surat</ul>
+            <ul>Pune</ul>
+            <ul>Jaipur</ul>
+            <ul>Lucknow</ul>
+            <ul>Kanpur</ul>
+            <ul>Nagpur</ul>
+            <ul>Indore</ul>
+            <ul>Thane</ul>
+            <ul>Bhopal</ul>
+            <ul>Visakhapatnam</ul>
+            <ul>Pimpri & Chinchwad</ul>
+            <ul>Patna</ul>
+            <ul>Vadodara</ul>
+            <ul>Ghaziabad</ul>
+            <ul>Ludhiana</ul>
+            <ul>Agra</ul>
+            <ul>Nashik</ul>
+            <ul>Faridabad</ul>
+            <ul>Meerut</ul>
+            <ul>Rajkot</ul>
+            <ul>Kalyan & Dombivali</ul>
+            <ul>Vasai Virar</ul>
+            <ul>Varanasi</ul>
+            <ul>Srinagar</ul>
+            <ul>Aurangabad</ul>
+            <ul>Dhanbad</ul>
+            <ul>Amritsar</ul>
+            <ul>Navi Mumbai</ul>
+            <ul>Allahabad</ul>
+            <ul>Ranchi</ul>
+            <ul>Haora</ul>
+        </div>
+        <div>
+            <ul>Dhanbad</ul>
+            <ul>Amritsar</ul>
+            <ul>Navi Mumbai</ul>
+            <ul>Allahabad</ul>
+            <ul>Ranchi</ul>
+            <ul>Haora</ul>
+            <ul>Coimbatore</ul>
+            <ul>Jabalpur</ul>
+            <ul>Gwalior</ul>
+            <ul>Vijayawada</ul>
+            <ul>Coimbatore</ul>
+            <ul>Jabalpur</ul>
+            <ul>Gwalior</ul>
+            <ul>Vijayawada</ul>
+            <ul>Jodhpur</ul>
+            <ul>Madurai</ul>
+            <ul>Raipur</ul>
+            <ul>Kota</ul>
+            <ul>Guwahati</ul>
+            <ul>Chandigarh</ul>
+            <ul>Solapur</ul>
+            <ul>Hubli and Dharwad</ul>
+            <ul>Hubli and Dharwad</ul>
+            <ul>Moradabad</ul>
+            <ul>Gurgaon</ul>
+            <ul>Aligarh</ul>
+            <ul>Jalandhar</ul>
+            <ul>Tiruchirappalli</ul>
+            <ul>Bhubaneswar</ul>
+            <ul>Salem</ul>
+            <ul>Mira and Bhayander</ul>
+            <ul>Thiruvananthapuram</ul>
+            <ul>Bhiwandi</ul>
+            <ul>Saharanpur</ul>
+            <ul>Gorakhpur</ul>
+            <ul>Guntur</ul>
+            <ul>Bikaner</ul>
+            <ul>Amravati</ul>
+        </div>
+        <div>
+            <ul>Coimbatore</ul>
+            <ul>Jabalpur</ul>
+            <ul>Gwalior</ul>
+            <ul>Vijayawada</ul>
+            <ul>Jodhpur</ul>
+            <ul>Madurai</ul>
+            <ul>Raipur</ul>
+            <ul>Kota</ul>
+            <ul>Guwahati</ul>
+            <ul>Chandigarh</ul>
+            <ul>Solapur</ul>
+            <ul>Hubli and Dharwad</ul>
+            <ul>Hubli and Dharwad</ul>
+            <ul>Moradabad</ul>
+            <ul>Gurgaon</ul>
+            <ul>Aligarh</ul>
+            <ul>Jalandhar</ul>
+            <ul>Tiruchirappalli</ul>
+            <ul>Bhubaneswar</ul>
+            <ul>Mumbai </ul>
+            <ul>Delhi </ul>
+            <ul>Bangalore </ul>
+            <ul>Hyderabad </ul>
+            <ul>Chennai </ul>
+            <ul>Kolkata </ul>
+            <ul>Surat</ul>
+            <ul>Pune</ul>
+            <ul>Jaipur</ul>
+            <ul>Mumbai </ul>
+            <ul>Delhi </ul>
+            <ul>Bangalore </ul>
+            <ul>Hyderabad </ul>
+            <ul>Chennai </ul>
+            <ul>Kolkata </ul>
+            <ul>Surat</ul>
+            <ul>Pune</ul>
+            <ul>Jaipur</ul>
+            <ul>Noida</ul>
+        </div>
+        <div>
+            <ul>Jamshedpur</ul>
+            <ul>Bhilai Nagar</ul>
+            <ul>Warangal</ul>
+            <ul>Cuttack</ul>
+            <ul>Aligarh</ul>
+            <ul>Jalandhar</ul>
+            <ul>Tiruchirappalli</ul>
+            <ul>Bhubaneswar</ul>
+            <ul>Mumbai </ul>
+            <ul>Delhi </ul>
+            <ul>Bangalore </ul>
+            <ul>Hyderabad </ul>
+            <ul>Chennai </ul>
+            <ul>Kolkata </ul>
+            <ul>Surat</ul>
+            <ul>Pune</ul>
+            <ul>Firozabad</ul>
+            <ul>Kochi</ul>
+            <ul>Bhavnagar</ul>
+            <ul>Dehradun</ul>
+            <ul>Durgapur</ul>
+            <ul>Asansol</ul>
+            <ul>Nanded Waghala</ul>
+            <ul>Kolapur</ul>
+            <ul>Ajmer</ul>
+            <ul>Gulbarga</ul>
+            <ul>Jamnagar</ul>
+            <ul>Ujjain</ul>
+            <ul>Loni</ul>
+            <ul>Siliguri</ul>
+            <ul>Jhansi</ul>
+            <ul>Ulhasnagar</ul>
+            <ul>Nellore</ul>
+            <ul>Jammu</ul>
+            <ul>Sangli Miraj Kupwad</ul>
+            <ul>Belgaum</ul>
+            <ul>Mangalore</ul>
+            <ul>Ambattur</ul>
+        </div>
+    </div>
+    <div id="footer3">
+        <div>
+            <div>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"/>
+            </div>
+            <div>© 2023 Swiggy</div>
+            <div>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc"/>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-pinterest_kmz2wd"/>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh"/>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv"/>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function(){
+            // alert("working")
+            var divToShowProducts = document.getElementById("products3");
+            var finalData = "";
+
+            var productsFromLS = JSON.parse(localStorage.getItem("Products3"));
+            for (var i=0;i <productsFromLS.length;i++){
+                // console.log(productsFromLS[i],'productFromLS')
+                finalData += `<div id='singlepro'><img src =${productsFromLS[i].proImage} /><h3>${productsFromLS[i].proName}</h3><p>${productsFromLS[i].proPrice}</p></div>`
+            }
+            console.log(finalData,"finalData here")
+            divToShowProducts.innerHTML = finalData;
+
+        }
+    </script>
+</body>
+</html>
