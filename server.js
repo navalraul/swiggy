@@ -31,7 +31,8 @@ function register(event) {
                     }
                     Ls.push(userdata);
                     localStorage.setItem("Users", JSON.stringify(Ls))
-                    alert("Registration Successful")
+                    alert("Registration Successful");
+                    window.location.href = `./SwiggySignup.html`;
                     document.getElementById("username").value = ""
                     document.getElementById("useremail").value = ""
                     document.getElementById("userpassword").value = ""

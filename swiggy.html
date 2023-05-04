@@ -46,6 +46,20 @@
             margin: 20px;
             display: flex;
         }
+        #switch {
+            width: 25%;
+            height: 30px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+        #switch >button{
+            width: 45%;
+        }
+        #switch >button:hover {
+            cursor: pointer;
+            background-color: #fc8019;
+        }
         #class >div:nth-child(1) >div:nth-child(1) >div:nth-child(1) div >h4 {
             /* border: 2px solid black; */
             width: 50%;
@@ -389,10 +403,11 @@
             <div>
                 <div>
                     <img src="https://www.punekarnews.in/wp-content/uploads/2020/03/swiggy.jpg"/>
-                    <div>
-                        <h4>Login</h4>
-                        <h5>Sign up</h5>
+                    <div id="switch">
+                        <button onclick="window.location.href=`./SwiggySignup.html`">Login</button>
+                        <button onclick="window.location.href=`./SwiggyRegister.html`">Register</button>
                     </div>
+                    <div id="logout"></div>
                 </div>
                 <div>
                     <h2>Game Night?</h2>
@@ -668,6 +683,36 @@
         </div>
     </div>
 
+
+    <script>
+        window.onload = function () {
+            // alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+            if (!!currentUser){
+                // alert(currentUser.userName)
+                var logoutDiv = document.getElementById("logout");
+                var divFromHtml = document.getElementById("switch");
+                // console.log(divFromHtml,"divFromHtml");
+                // var h1 = document.createElement("h1");
+                // h1.innerHTML = "Naval"
+                // divFromHtml.append(h1)
+                var button = '<button onclick="logout()">Logout</button>'
+                var name = `<h1>${currentUser.userName}</h1>`;
+                divFromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+            }else {
+                alert("currentuser Absent")
+            }
+            // console.log(currentUser,"userName")
+        }
+        function logout() {
+            alert("working")
+            localStorage.removeItem("currentUser");
+            window.location.reload();
+        }
+
+    </script>
     
 </body>
 </html>
