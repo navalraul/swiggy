@@ -18,7 +18,7 @@ function login(event) {
     if (flag == true) {
         // console.log(currentUser,"currentUser")
         localStorage.setItem("currentUser",JSON.stringify(currentUser))
-        window.location.href = './swiggy.html';
+        window.location.href = './Swiggyjs.html';
         alert("login successfull")
     }
     else {
