@@ -2,12 +2,12 @@ function login(event) {
     // alert("function called")
     event.preventDefault();
 
-    var userEmail = document.getElementById("useremail").value;
-    var userPassword = document.getElementById("userpassword").value;
+    var userEmail = document.getElementById("Swiggyuseremail").value;
+    var userPassword = document.getElementById("Swiggyuserpassword").value;
 
-    var Ls = JSON.parse(localStorage.getItem("Users"));
+    var Ls = JSON.parse(localStorage.getItem("SwiggyUsers"));
 
-    var currentUser ;
+    var SwiggycurrentUser ;
     var flag = false;
     for (var i = 0; i < Ls.length; i++) {
         if (Ls[i].userEmail == userEmail && Ls[i].userPassword == userPassword) {
@@ -17,7 +17,7 @@ function login(event) {
     }
     if (flag == true) {
         // console.log(currentUser,"currentUser")
-        localStorage.setItem("currentUser",JSON.stringify(currentUser))
+        localStorage.setItem("SwiggycurrentUser",JSON.stringify(SwiggycurrentUser))
         window.location.href = './Swiggyjs.html';
         alert("login successfull")
     }

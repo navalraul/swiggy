@@ -26,12 +26,12 @@
             var proName = document.getElementById("rname").value;
             var proPrice = document.getElementById("rprice").value;
             var proImage = document.getElementById("rimage").value;
-            var product = {proName,proPrice,proImage};
+            var Swiggyproduct = {proName,proPrice,proImage};
 
-            var LS =JSON.parse (localStorage.getItem("Products3")) || [];
-            LS.push(product);
+            var LS =JSON.parse (localStorage.getItem("SwiggyProducts")) || [];
+            LS.push(Swiggyproduct);
 
-            localStorage.setItem("Products3",JSON.stringify(LS));
+            localStorage.setItem("SwiggyProducts",JSON.stringify(LS));
 
             alert("Product added successfully.")
         }

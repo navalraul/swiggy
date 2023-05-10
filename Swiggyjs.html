@@ -136,7 +136,7 @@
 
         #navbar>div:nth-child(1)>div:nth-child(7) {
             width: 9%;
-            height: 80px;
+            height: 40px;
             /* border: 2px solid black; */
             display: flex;
 
@@ -260,7 +260,7 @@
             margin-left: 8px;
         }
 
-        #products3 {
+        #Swiggyproducts {
             width: 100%;
             height: 500px;
             border: 1px solid red;
@@ -470,8 +470,13 @@
                 <i class="fa-solid fa-life-ring" style="color: #060709;"></i>
                 <p>Help</p>
             </div>
+            <div id="switch">
+                <button onclick="window.location.href=`./SwiggyLogin.html`">Login</button>
+                <button onclick="window.location.href=`./SwiggyRegister.html`">Register</button>
+            </div>
+            <div id="logout"></div>
             <div>
-                <img src="https://cdn-icons-png.flaticon.com/512/327/327628.png" />
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/327/327628.png" /> -->
                 <p>Sign In</p>
             </div>
             <div>
@@ -506,7 +511,7 @@
         </div>
 
     </div>
-    <div id="products3">w</div>
+    <div id="Swiggyproducts"></div>
     <div id="footer">
         <div>
             <h4>COMPANY</h4>
@@ -728,22 +733,41 @@
     <script>
         window.onload = function () {
             // alert("working")
-            var divToShowProducts = document.getElementById("products3");
+            var divToShowProducts = document.getElementById("Swiggyproducts");
             var finalData = "";
 
-            var productsFromLS = JSON.parse(localStorage.getItem("Products3"));
+            var productsFromLS = JSON.parse(localStorage.getItem("SwiggyProducts"));
             for (var i = 0; i < productsFromLS.length; i++) {
                 // console.log(productsFromLS[i],'productFromLS')
-                finalData += `<div onclick 'redirect(${JSON.stringify(productsFromLS[i])})' id='singlepro'><img src =${productsFromLS[i].proImage} /><h3>${productsFromLS[i].proName}</h3><p>${productsFromLS[i].proPrice}</p></div>`
+                finalData += `<div onclick= 'redirect(${JSON.stringify(productsFromLS[i])})' id='singlepro'><img src =${productsFromLS[i].proImage} /><h3>${productsFromLS[i].proName}</h3><p>${productsFromLS[i].proPrice}</p></div>`
             }
             console.log(finalData, "finalData here")
             divToShowProducts.innerHTML = finalData;
 
-        }
-        function redirect(product) {
-            var singleproduct = JSON.stringify(product);
+            if (!!currentUser){
+                var logoutDiv = document.getElementById("logout");
+                var divFromHtml = document.getElementById("switch");
 
-            localStorage.setItem("current-product", singleproduct);
+                var button = '<button onclick="logout()">Logout</button>'
+                var name = `<h1>${currentUser.userName}</h1>`;
+                divFromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+            }else {
+                alert("Current User Absent")
+            }
+            console.log(currentUser,"userEmail")
+
+        }
+        function logout(){
+            alert("Working")
+            localStorage.removeItem("SwiggycurrentUser");
+            window.location.reload();
+        }
+
+        function redirect(Swiggyproduct) {
+            var Swiggysingleproduct = JSON.stringify(Swiggyproduct);
+
+            localStorage.setItem("Swiggycurrent-product", Swiggysingleproduct);
             window.location.href = './Singleproduct.html'
         }
 
