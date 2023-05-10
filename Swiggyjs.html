@@ -744,18 +744,18 @@
             console.log(finalData, "finalData here")
             divToShowProducts.innerHTML = finalData;
 
-            if (!!currentUser){
+            if (!!SwiggcurrentUser){
                 var logoutDiv = document.getElementById("logout");
                 var divFromHtml = document.getElementById("switch");
 
                 var button = '<button onclick="logout()">Logout</button>'
-                var name = `<h1>${currentUser.userName}</h1>`;
+                var name = `<h1>${SwiggycurrentUser.userName}</h1>`;
                 divFromHtml.innerHTML = name;
                 logoutDiv.innerHTML = button;
             }else {
                 alert("Current User Absent")
             }
-            console.log(currentUser,"userEmail")
+            // console.log(currentUser,"userEmail")
 
         }
         function logout(){
@@ -765,9 +765,9 @@
         }
 
         function redirect(Swiggyproduct) {
-            var Swiggysingleproduct = JSON.stringify(Swiggyproduct);
+            var singleproduct = JSON.stringify(Swiggyproduct);
 
-            localStorage.setItem("Swiggycurrent-product", Swiggysingleproduct);
+            localStorage.setItem("Swiggycurrent-product", singleproduct);
             window.location.href = './Singleproduct.html'
         }
 
