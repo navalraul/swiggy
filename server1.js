@@ -12,7 +12,7 @@ function login(event) {
     for (var i = 0; i < Ls.length; i++) {
         if (Ls[i].userEmail == userEmail && Ls[i].userPassword == userPassword) {
             flag = true;
-            currentUser = Ls[i];
+            SwiggycurrentUser = Ls[i];
         }
     }
     if (flag == true) {

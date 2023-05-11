@@ -739,17 +739,20 @@
             var productsFromLS = JSON.parse(localStorage.getItem("SwiggyProducts"));
             for (var i = 0; i < productsFromLS.length; i++) {
                 // console.log(productsFromLS[i],'productFromLS')
-                finalData += `<div onclick= 'redirect(${JSON.stringify(productsFromLS[i])})' id='singlepro'><img src =${productsFromLS[i].proImage} /><h3>${productsFromLS[i].proName}</h3><p>${productsFromLS[i].proPrice}</p></div>`
+                finalData += `<div onclick ='redirect(${JSON.stringify(productsFromLS[i])})' id='singlepro'><img src =${productsFromLS[i].proImage} /><h3>${productsFromLS[i].proName}</h3><p>${productsFromLS[i].proPrice}</p></div>`
             }
             console.log(finalData, "finalData here")
             divToShowProducts.innerHTML = finalData;
 
-            if (!!SwiggcurrentUser){
+            alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("SwiggycurrentUser"));
+
+            if (!!currentUser){
                 var logoutDiv = document.getElementById("logout");
                 var divFromHtml = document.getElementById("switch");
 
                 var button = '<button onclick="logout()">Logout</button>'
-                var name = `<h1>${SwiggycurrentUser.userName}</h1>`;
+                var name = `<h1>${currentUser.userName}</h1>`;
                 divFromHtml.innerHTML = name;
                 logoutDiv.innerHTML = button;
             }else {
